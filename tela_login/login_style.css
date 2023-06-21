@@ -14,13 +14,13 @@ a{
 
 header{
     width: 100vw;
-    height: 86px;
+    height: 8vh;
 
     display: flex;
 
     align-items: center;
     justify-content: space-between;
-    padding: 0px 48px;
+    padding: 0px 3.33vw;
 
     background-color: #8BC34A;
 }
@@ -31,8 +31,8 @@ body{
 
 .cjrLogoHeader{
     background-color: #d9d9d9;
-    height: 3rem;
-    width: 124px;
+    height: 5vh;
+    width: 9vw;
 
     border-radius: 16px;
     /* Usado para posicionar obejtos */
@@ -45,38 +45,117 @@ body{
 
 
 .cjrLogoHeaderImg{
-    width: 60px;
-    height: 36px;
+    width: 4vw;
+    height: 3.5 vh;
     margin: auto;
+    padding: 0.5vh 0px 0px 0px;
 }
 
-/* Não ta certo */
 
 .entrar{
     background-color: #222E50;
     color: #FFFFFF;
     border-radius: 16px;
-    padding: 15px 21px;
+    padding: 1.5vh 1.5vw;
     font-weight: bold;
-
-
-}
-
-
-.mainDiv{
-    box-sizing: border-box;
-
-    width: 100vw;
-    height: calc(100vh - 86px);
-
-    background-color: #111E3E;
-    border: 1px solid #000000;
 }
 
 .criarConta{
     color: #222E50;
     font-weight: bold;
-    margin-right: 10px;
-
+    margin-right: 1vw;
 }
 
+
+main{
+    box-sizing: border-box;
+
+    width: 100vw;
+    height: 92vh;
+
+    background-color: #111E3E;
+    border: 1px solid #000000;
+    padding: 14vh 31vw 19vh 31vw;
+}
+
+
+.divLogin{
+    width: 38vw;
+    height: 59vh;
+    background-color: #222E50;
+    
+    border-radius: 10px;
+
+    display: flex;
+    flex-direction: column;
+    /* coloca os objetos verticalmente no centro */
+    align-items: center;
+    /* coloca os objetos horizontalmente no centro */
+    justify-content: center;    
+}
+
+
+.imgLogin{
+    width: 12vw;
+    height: 15vh;
+
+    margin-top: 5.67vh;
+    margin-bottom: 5.09vh;
+}
+
+.divLoginCampo{
+    width: 29vw;
+    height: 5.8vh;
+    background-color:#71767b;
+    border-radius: 10px;
+    padding: 0px 0px 0px 1vw;
+    margin-bottom: 3.9vh;
+    display: flex;
+    justify-content: space-between;
+    /* coloca os objetos verticalmente no centro */
+    align-items: center;    
+}
+
+.divSenhaCampo{
+    width: 29vw;
+    height: 5.8vh;
+    background-color:#71767b;
+    border-radius: 10px;
+    padding: 0px 0px 0px 1vw;
+    margin-bottom: 2.92vh;
+    display: flex;
+    justify-content: space-between;
+    /* coloca os objetos verticalmente no centro */
+    align-items: center;    
+}
+.esqueceuSenha{
+    color: #111E3E;
+    margin-bottom: 2.92vh;
+    font-weight: bold;
+         
+}
+
+input{
+    background-color: #d9d9d9;
+    width: 25.7vw;
+    height: 5.8vh;
+    border-radius: 15px;
+    padding: 1.95vh 19.3vw 1.95vh 1.73vw;
+}
+
+.imgCampo{
+    width: 1.18vw;
+    height: 1.66vh; 
+}
+
+/* Não ta certo */
+
+.loginEntrar{
+    width: 19.6vw;
+    height: 4.87vh;
+    border-radius: 15px;
+    font-weight: bold;
+    background-color: #d9d9d9;
+    color: #222E50;
+    margin-bottom: 4.97vh;
+}
