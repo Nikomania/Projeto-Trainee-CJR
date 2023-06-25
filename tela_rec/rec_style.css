@@ -95,7 +95,7 @@ main {
     margin-top: 23.24vh;
 }
 
-#link {
+#link1 {
     margin-top: 2.64vh;
     width: 14.93vw;
     height: 1.86vh;
@@ -110,6 +110,10 @@ main {
 
 a {
     color: #111E3E;
+}
+
+#link2 {
+    text-decoration: underline;
 }
 
 #botao {
