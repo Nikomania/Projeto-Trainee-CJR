@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+
+*{padding: 0;
+margin: 0;
+box-sizing: border-box;
+} 
+/*
+Ta certo
+*/
+a{
+    text-decoration: none;
+}
+
+header{
+    width: 100vw;
+    height: 8vh;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 3.33vw;
+
+    background-color: #8BC34A;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+    background-color: #111E3E;
+}
+
+.cjrLogoHeader{
+    background-color: #d9d9d9;
+    height: 5vh;
+    width: 9vw;
+
+    border-radius: 16px;
+    /* Usado para posicionar obejtos */
+    display: flex;
+    /* coloca os objetos verticalmente no centro */
+    align-items: center;
+    /* coloca os objetos horizontalmente no centro */
+    justify-content: center;
+}
+
+
+.cjrLogoHeaderImg{
+    width: 4vw;
+    height: 3.5 vh;
+    margin: auto;
+    padding: 0.5vh 0px 0px 0px;
+}
+
+
+.entrar{
+    background-color: #222E50;
+    color: #FFFFFF;
+    border-radius: 16px;
+    padding: 1.5vh 1.5vw;
+    font-weight: bold;
+}
+
+.criarConta{
+    color: #222E50;
+    font-weight: bold;
+    margin-right: 1vw;
+}
+
+
+main {
+    display: flex;
+    flex-direction: row;
+}
+
+
+#divRec {
+    border-radius: 10px;
+    width: 37.99vw;
+    height: 70.61vh;
+    margin-top: 8.3vh;
+    background-color: #222E50;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 4.22vh 0px 0px 0px;
+}
+
+#img_fundo {
+    width: 54.03vw;
+    height: 44.04vh;
+    margin-top: 23.24vh;
+}
+
+#link {
+    margin-top: 2.64vh;
+    width: 14.93vw;
+    height: 1.86vh;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.11vw;
+    line-height: 1.86vh;
+    color: #111E3E;
+}
+
+a {
+    color: #111E3E;
+}
+
+#botao {
+    margin-top: 1.66vh;
+    height: 4.88vh;
+    width: 19.65vw;
+    align-items: center;
+    justify-content: center;
+    border-radius: 1.46vh;
+    background-color: #D9D9D9;
+    border-style: none;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.11vw;
+    line-height: 1.86vh;
+}
+
+#divInfo {
+    margin-top: 2.17vh;
+    width: 27.85vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.senha {
+    margin-top: 1.46vh;
+    background-color: #D9D9D9;
+    width: 27.85vw;
+    height: 5.66vh;
+    border-radius: 1.46vh;
+    border-style: none;
+    padding: 0px 0px 0px 1.39vw;
+    opacity: ;
+}
+
+.texto {
+    margin-top: 2vh;
+    width: 26.28vw;
+    height: 1.86vh;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.11vw;
+    line-height: 1.86vh;
+    color: #FFFFFF;
+    opacity: .70;
+}
+
+.texto1 {
+    margin-top: auto;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 2.22vw;
+    line-height: auto;
+    color: #FFFFFF;
+    opacity: .70;
+}
