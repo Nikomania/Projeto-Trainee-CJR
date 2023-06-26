@@ -1,0 +1,200 @@
+header {
+    height: 8.30078125vh;
+    width: 100vw;
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+    background-color: #8BC34A;
+    margin: 0;
+}
+
+.headerElements {
+    margin: 0 3.33vw 0 3.33vw;
+}
+
+#cjrLogoHeader {
+    width: 8.61vw;
+    height: 4.30vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #D9D9D9;
+    border-radius: 1.56vh;
+}
+
+#cjrLogoHeaderImg {
+    width: 4.17vw;
+    height: 3.52vh;
+}
+
+.semSublinhado {
+    text-decoration: none;
+}
+
+#CriarEntrarConta {
+    display: flex;
+    flex-direction: row;
+    width: 13.89vw;
+    height: 4.69vh;
+    justify-content: space-between;
+    align-items: center;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.11vw;
+    line-height: 1.86vh;
+}
+
+#entrar {
+    color: #FFFFFF;
+}
+
+#entrarBotao {
+    background-color: #222E50;
+    border-radius: 1.56vh;
+    width: 6.39vw;
+    height: 4.69vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+    background-color: #111E3E;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+}
+
+#img_fundo {
+    width: 54.03vw;
+    height: 44.04vh;
+    margin-top: 23.24vh;
+}
+
+#cadastro {
+    border-radius: 10px;
+    width: 37.99vw;
+    height: 70.61vh;
+    margin-top: 8.3vh;
+    background-color: #222E50;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 4.22vh 0px 0px 0px;
+}
+
+#img_user_no_photo {
+    width: 11.66vw;
+    height: 15.49vh;
+    position: relative;
+    top: 0%;
+    left: 0%;
+}
+
+#img_ins_photo {
+    width: 3.18vw;
+    height: 3.83vh;
+    position: absolute;
+    right: 0.18vw;
+    top: 12.37vh;
+}
+
+#inserir_foto {
+    width: 11.66vw;
+    height: 15.49vh;
+    position: relative;
+}
+
+#campos {
+    margin-top: 2.17vh;
+    width: 27.85vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.campo {
+    margin-top: 1.46vh;
+    background-color: #D9D9D9;
+    width: 27.85vw;
+    height: 5.66vh;
+    border-radius: 1.46vh;
+    border-style: none;
+    padding: 0px 0px 0px 1.39vw;
+}
+
+#genero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#genero_placeholder {
+    color: #111E3E;
+    opacity: 0.7;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.11vw;
+    line-height: 1.86vh;
+}
+
+#select {
+    margin-right: 1.39vw;
+    height: 1.76vh;
+    width: 1.25vw;
+}
+
+.campo::placeholder {
+    color: #111E3E;
+    opacity: 0.7;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.11vw;
+    line-height: 1.86vh;
+}
+
+#link {
+    margin-top: 2.64vh;
+    width: 14.93vw;
+    height: 1.86vh;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.11vw;
+    line-height: 1.86vh;
+    color: #111E3E;
+}
+
+a {
+    color: #111E3E;
+}
+
+#botao {
+    margin-top: 1.66vh;
+    height: 4.88vh;
+    width: 19.65vw;
+    align-items: center;
+    justify-content: center;
+    border-radius: 1.46vh;
+    background-color: #D9D9D9;
+    border-style: none;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.11vw;
+    line-height: 1.86vh;
+}
