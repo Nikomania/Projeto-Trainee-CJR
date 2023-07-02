@@ -1,0 +1,52 @@
+.sectionFeed{
+    width: 32vw;
+    height: 91vh;
+    border-right: 1px solid #7E7E7E;
+    border-left: 1px solid #7E7E7E;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.imgPerfil{
+    border-radius: 32px;
+    margin-top: 14px;
+    margin-left: 9px;
+    margin-right: 11px;
+}
+
+.usrName{
+    color: #FFF;
+    margin-top: 10px;
+    margin-right: 4px;
+}
+
+.postDate{
+    color: #71767B;
+    margin-top: 10px;
+    margin-right: 4px;
+}
+
+.ponto{
+    color: #71767B;
+    margin-top: 3px;
+    margin-right: 2px;
+}
+
+.postHeader{
+    display: flex;
+    align-items: center;
+}
+
+.postContent{
+    color: #FFF;
+    margin-left: 70px;
+    margin-top: 5px;
+    margin-right: 6px;
+    margin-bottom: 12px;
+}
+
+.divPost{
+    border-bottom:1px solid #7E7E7E;
+    padding-bottom: 12px;
+    margin: 0px 24px;
+}
