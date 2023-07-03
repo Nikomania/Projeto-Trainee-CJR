@@ -11,6 +11,10 @@ header{
     background-color: #8BC34A;
 }
 
+.semSublinhado {
+    text-decoration: none;
+}
+
 .cjrLogoHeader{
     background-color: #d9d9d9;
     height: 5vh;
@@ -27,7 +31,7 @@ header{
 
 .cjrLogoHeaderImg{
     width: 4vw;
-    height: 3.5 vh;
+    height: 3.5vh;
     margin: auto;
     padding: 0.5vh 0px 0px 0px;
 }
