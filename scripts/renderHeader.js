@@ -19,7 +19,7 @@ function renderHeader(){
     // Definir o HTML dentro de rightDiv
     rightDiv.innerHTML = `
         <a href=''> 
-            <a href="" class="criarConta">Criar Conta</a>
+            <a href="" class="criarConta semSublinhado">Criar Conta</a>
             <a href="" class="entrar">Entrar</a>
         </a> 
     `
