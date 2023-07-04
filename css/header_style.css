@@ -1,51 +1,50 @@
-header{
-    width: 100vw;
-    height: 8vh;
+header {
+  height: 8vh;
 
-    display: flex;
+  display: flex;
 
-    align-items: center;
-    justify-content: space-between;
-    padding: 0px 3.33vw;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 3.33vw;
 
-    background-color: #8BC34A;
+  background-color: #8bc34a;
 }
 
 .semSublinhado {
-    text-decoration: none;
+  text-decoration: none;
 }
 
-.cjrLogoHeader{
-    background-color: #d9d9d9;
-    height: 5vh;
-    width: 9vw;
+.cjrLogoHeader {
+  background-color: #d9d9d9;
+  height: 5vh;
+  width: 9vw;
 
-    border-radius: 16px;
-    /* Usado para posicionar obejtos */
-    display: flex;
-    /* coloca os objetos verticalmente no centro */
-    align-items: center;
-    /* coloca os objetos horizontalmente no centro */
-    justify-content: center;
+  border-radius: 16px;
+  /* Usado para posicionar obejtos */
+  display: flex;
+  /* coloca os objetos verticalmente no centro */
+  align-items: center;
+  /* coloca os objetos horizontalmente no centro */
+  justify-content: center;
 }
 
-.cjrLogoHeaderImg{
-    width: 4vw;
-    height: 3.5vh;
-    margin: auto;
-    padding: 0.5vh 0px 0px 0px;
+.cjrLogoHeaderImg {
+  width: 4vw;
+  height: 3.5vh;
+  margin: auto;
+  padding: 0.5vh 0px 0px 0px;
 }
 
-.entrar{
-    background-color: #222E50;
-    color: #FFFFFF;
-    border-radius: 16px;
-    padding: 1.5vh 1.5vw;
-    font-weight: bold;
+.entrar {
+  background-color: #222e50;
+  color: #ffffff;
+  border-radius: 16px;
+  padding: 1.5vh 1.5vw;
+  font-weight: bold;
 }
 
-.criarConta{
-    color: #222E50;
-    font-weight: bold;
-    margin-right: 1vw;
+.criarConta {
+  color: #222e50;
+  font-weight: bold;
+  margin-right: 1vw;
 }
