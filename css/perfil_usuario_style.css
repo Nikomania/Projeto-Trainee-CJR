@@ -1,9 +1,16 @@
 @import "../css/header_style.css";
 
+:root {
+  --background-color: #111e3e;
+  --border-color: #7e7e7e;
+  --Post_background-color: #222e50;
+  --font-color: #ffffff;
+}
+
 body {
   margin: 0;
   width: 100vw;
-  background: #111e3e;
+  background: var(--background-color);
 }
 
 main {
@@ -14,6 +21,84 @@ main {
   justify-content: center;
 }
 
-.perfil {
+.feed {
   width: 44.86vw;
+  margin-top: 0.2vh;
+}
+
+.Post_background {
+  height: 14.76vh;
+  background: var(--Post_background-color);
+}
+
+.Line_1 {
+  height: 0.2vh;
+  background: var(--border-color);
+}
+
+.user_info {
+  height: 18.87vh;
+  position: relative;
+}
+
+.user_info_content {
+  position: absolute;
+  height: 18.87vh;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  padding: 0 0 0 4.65vw;
+  bottom: 7.43vh;
+}
+
+.profile_content {
+  height: 76.64vh;
+  display: flex;
+  flex-direction: column;
+  border-right: 0.07vw solid var(--border-color);
+  border-left: 0.07vw solid var(--border-color);
+}
+
+.user_main_photo {
+  width: 10.42vw;
+  height: 14.66vh;
+}
+
+.profile_picture {
+  width: 100%;
+  height: 100%;
+  flex-shrink: 0;
+  border-radius: 50%;
+}
+
+.info {
+  display: flex;
+  flex-direction: row;
+  height: 2.35vh;
+  margin-top: 0.78vh;
+}
+
+.main_user_name {
+  width: 9.86vw;
+  height: 1.56vh;
+  flex-shrink: 0;
+  margin-top: 1.37vh;
+  margin-bottom: 0.78vh;
+
+  color: var(--font-color);
+  font-size: 1.96vh;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.text_icon {
+  color: var(--font-color);
+  font-size: 1.47vh;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-left: 0.9vw;
 }
