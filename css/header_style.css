@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
 header {
   height: 8vh;
 
@@ -33,6 +35,7 @@ header {
   height: 3.5vh;
   margin: auto;
   padding: 0.5vh 0px 0px 0px;
+  -webkit-user-drag: none;
 }
 
 .entrar {
@@ -41,10 +44,21 @@ header {
   border-radius: 16px;
   padding: 1.5vh 1.5vw;
   font-weight: bold;
+
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
 }
 
 .criarConta {
-  color: #222e50;
   font-weight: bold;
   margin-right: 1vw;
+
+  color: #222e50;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
 }
