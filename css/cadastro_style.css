@@ -1,11 +1,21 @@
 @import "../css/header_style.css";
 
+img {
+  -webkit-user-drag: none;
+}
+
 body {
   width: 100vw;
   height: 100vh;
   padding: 0;
   margin: 0;
   background-color: #111e3e;
+
+  font-size: 1.56vh;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.86vh;
 }
 
 main {
@@ -80,11 +90,12 @@ main {
 #genero_placeholder {
   color: #111e3e;
   opacity: 0.7;
+  width: 4.03vw;
+  height: 1.86vh;
 
   font-family: "Inter";
   font-style: normal;
   font-weight: 700;
-  font-size: 1.11vw;
   line-height: 1.86vh;
 }
 
@@ -101,7 +112,6 @@ main {
   font-family: "Inter";
   font-style: normal;
   font-weight: 700;
-  font-size: 1.11vw;
   line-height: 1.86vh;
 }
 
@@ -110,11 +120,6 @@ main {
   width: 14.93vw;
   height: 1.86vh;
 
-  font-family: "Inter";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 1.11vw;
-  line-height: 1.86vh;
   color: #111e3e;
 }
 
@@ -132,9 +137,9 @@ a {
   background-color: #d9d9d9;
   border-style: none;
 
+  font-size: 1.56vh;
   font-family: "Inter";
   font-style: normal;
   font-weight: 700;
-  font-size: 1.11vw;
   line-height: 1.86vh;
 }
