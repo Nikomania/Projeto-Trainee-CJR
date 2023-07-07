@@ -1,18 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Post</title>
-        <link rel="stylesheet" href="../css/post_aberto.css">
-    </head>
-    <body>
-        <header></header>
-        <script src="../scripts/renderHeader.js"></script>
-        <main>
-            <section class="sectionFeed">
-            </section>
-            <script src="../scripts/renderPost.js"></script>
-        </main>
-    </body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Post</title>
+    <script src="../scripts/renderHeader.js"></script>
+    <script src="../scripts/initialData.js"></script>
+    <link rel="stylesheet" href="../css/post_aberto.css" />
+  </head>
+  <body>
+    <header></header>
+    <script>
+      renderHeader();
+    </script>
+    <main>
+      <section class="sectionFeed"></section>
+      <script src="../scripts/renderPost.js"></script>
+    </main>
+  </body>
 </html>

@@ -1,6 +1,9 @@
 function renderHeader() {
   // Pegar o Header da página
   const header = document.querySelector("header");
+  while (header.firstChild) {
+    header.removeChild(header.firstChild);
+  }
 
   // Criar divs do Header
   const leftDiv = document.createElement("div");
@@ -16,15 +19,40 @@ function renderHeader() {
         </a> 
     `;
 
-  // Definir o HTML dentro de rightDiv
-  rightDiv.innerHTML = `
-        <a href=''> 
+  if (!logged) {
+    // Definir o HTML dentro de rightDiv
+    rightDiv.innerHTML = `
             <a href="" class="criarConta semSublinhado">Criar Conta</a>
             <a href="" class="entrar semSublinhado">Entrar</a>
-        </a> 
-    `;
+      `;
+  } else {
+    rightDiv.classList.add("user_options");
+
+    let span = document.createElement("span");
+    span.classList.add("user_name");
+    span.classList.add("name_header");
+
+    let logged_picture = document.createElement("img");
+    logged_picture.src = "../imgs/user_photo.png";
+    logged_picture.classList.add("logged_picture");
+
+    let link = document.createElement("a");
+    link.href = "";
+    let log_out_picture = document.createElement("img");
+    log_out_picture.classList.add("logged_out_picture");
+    log_out_picture.src = "../imgs/log-out.png";
+    link.appendChild(log_out_picture);
+
+    rightDiv.appendChild(span);
+    rightDiv.appendChild(logged_picture);
+    rightDiv.appendChild(link);
+  }
+
   header.appendChild(leftDiv);
   header.appendChild(rightDiv);
 }
 
-renderHeader();
+function switchHeader() {
+  logged = !logged;
+  renderHeader();
+}

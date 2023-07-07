@@ -7,10 +7,38 @@
   --Post_background-color: #222e50;
   --font-color: #ffffff;
   --font-color-date: #71767b;
+  --button-color: #111e3e;
 }
 
 img {
   -webkit-user-drag: none;
+}
+
+.div_edit_button {
+  margin-left: 31.6vw;
+  margin-top: 1.27vh;
+}
+
+.edit_button {
+  width: 10.69vw;
+  height: 5.11vh;
+  font-family: Inter;
+  font-style: normal;
+  line-height: normal;
+  font-weight: 700;
+  font-size: 1.7vh;
+  color: var(--font-color);
+  background: var(--button-color);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  border-style: solid;
+  border-width: 0.11vh;
+  border-radius: 1.7vh;
+  border-color: #000;
+}
+
+.user_space {
+  display: flex;
+  flex-direction: row;
 }
 
 body {
@@ -25,7 +53,7 @@ body {
 
 main {
   width: 100vw;
-  height: 92vh;
+  height: 100.23vh;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -33,36 +61,36 @@ main {
 
 .feed {
   width: 44.86vw;
-  margin-top: 0.2vh;
+  margin-top: 0.22vh;
 }
 
 .Post_background {
-  height: 14.76vh;
+  height: 16.08vh;
   background: var(--Post_background-color);
 }
 
 .Line_1 {
-  height: 0.2vh;
+  height: 0.22vh;
   background: var(--border-color);
 }
 
 .user_info {
-  height: 18.87vh;
+  height: 20.56vh;
   position: relative;
 }
 
 .user_info_content {
   position: absolute;
-  height: 18.87vh;
+  height: 20.56vh;
   display: flex;
   flex-direction: column;
   align-items: start;
   padding: 0 0 0 4.65vw;
-  bottom: 7.43vh;
+  bottom: 8.09vh;
 }
 
 .profile_content {
-  height: 76.83vh;
+  height: 83.7vh;
   display: flex;
   flex-direction: column;
   border-right: 0.07vw solid var(--border-color);
@@ -70,7 +98,7 @@ main {
 }
 
 .user_main_photo {
-  height: 14.66vh;
+  height: 15.97vh;
 }
 
 .profile_picture {
@@ -82,61 +110,61 @@ main {
 .info {
   display: flex;
   flex-direction: row;
-  height: 2.35vh;
-  margin-top: 0.78vh;
+  height: 2.56vh;
+  margin-top: 0.85vh;
 }
 
 .main_user_name {
   width: 9.86vw;
-  height: 1.56vh;
+  height: 1.7vh;
   flex-shrink: 0;
-  margin-top: 1.37vh;
-  margin-bottom: 0.78vh;
+  margin-top: 1.49vh;
+  margin-bottom: 0.85vh;
 
   color: var(--font-color);
-  font-size: 1.96vh;
+  font-size: 2.14vh;
   font-weight: 700;
 }
 
 .text_icon {
   color: var(--font-color);
-  font-size: 1.47vh;
+  font-size: 1.6vh;
   font-weight: 400;
   margin-left: 0.9vw;
 }
 
 .posts {
   display: flex;
-  height: 57.97vh;
+  height: 62.94vh;
   flex-direction: column;
   padding: 0 0.56vw 0 0.56vw;
 }
 
 .title {
-  margin-top: 1.56vh;
+  margin-top: 1.7vh;
   color: var(--font-color);
-  font-size: 1.47vh;
+  font-size: 1.6vh;
   font-weight: 800;
-  margin-bottom: 1.56vh;
+  margin-bottom: 0.85vh;
 }
 
 .post {
   display: flex;
   flex-direction: row;
-  margin-top: 1.56vh;
+  margin-top: 1.7vh;
   width: 43.75vw;
   background: var(--Post_background-color);
-  border-radius: 3.5vh;
+  border-radius: 3.81vh;
 }
 
 .post_picture {
   margin-left: 1.67vw;
-  height: 4.69vh;
-  margin-top: 1.37vh;
+  height: 5.11vh;
+  margin-top: 1.49vh;
 }
 
 .post_info {
-  margin-top: 2.74vh;
+  margin-top: 2.99vh;
   margin-left: 0.76vw;
   display: flex;
   flex-direction: column;
@@ -144,7 +172,7 @@ main {
 
 .post_header {
   color: var(--font-color-date);
-  font-size: 1.47vh;
+  font-size: 1.6vh;
   font-weight: 500;
 }
 
@@ -156,23 +184,23 @@ main {
 .post_content {
   display: flex;
   flex-direction: column;
-  margin-top: 1.74vh;
+  margin-top: 1.9vh;
   color: var(--font-color);
-  font-size: 1.47vh;
+  font-size: 1.6vh;
   font-weight: 500;
 }
 
 #post1 {
-  height: 17.79vh;
+  height: 19.38vh;
 }
 
 #post2 {
-  height: 35.39vh;
-  border-radius: 3.5vh 3.5vh 0 0;
+  height: 38.55vh;
+  border-radius: 3.81vh 3.81vh 0 0;
 }
 
 .post2_picture {
-  margin-top: 2.25vh;
+  margin-top: 2.45vh;
   width: 31.6vw;
-  height: 22.58vh;
+  height: 24.6vh;
 }
