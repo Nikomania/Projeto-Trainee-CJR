@@ -1,20 +1,6 @@
+@import "../css/style.css";
 @import "../css/header_style.css";
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-:root {
-  --background-color: #111e3e;
-  --border-color: #7e7e7e;
-  --Post_background-color: #222e50;
-  --font-color: #ffffff;
-  --font-color-date: #71767b;
-  --button-color: #111e3e;
-}
 
 img {
   -webkit-user-drag: none;
