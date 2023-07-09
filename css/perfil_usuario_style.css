@@ -144,6 +144,10 @@ main {
   padding: 0 0 4.9vh 0;
 }
 
+.post:hover {
+  cursor: pointer;
+}
+
 .post_picture {
   margin-left: 1.67vw;
   height: 5.11vh;
