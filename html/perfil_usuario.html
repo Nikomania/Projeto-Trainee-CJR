@@ -7,6 +7,7 @@
     <script src="../scripts/initialData.js"></script>
     <script src="../scripts/renderHeader.js"></script>
     <script src="../scripts/renderEditButton.js"></script>
+    <script src="../scripts/perfil_usuario_script.js"></script>
     <title>Perfil do Usuário</title>
   </head>
   <body>
@@ -21,13 +22,7 @@
           <div class="user_space">
             <div class="user_info">
               <div class="user_info_content">
-                <div class="user_main_photo">
-                  <img
-                    class="profile_picture"
-                    src="../imgs/user_photo.png"
-                    alt="Main_img"
-                  />
-                </div>
+                <div class="user_main_photo user_photo"></div>
                 <span class="user_name main_user_name"></span>
                 <div class="info">
                   <img
@@ -52,66 +47,16 @@
               renderEditButton();
             </script>
           </div>
-          <div class="Line_1">ㅤ</div>
           <div class="posts">
             <span class="title">Publicações</span>
-            <div class="post" id="post1">
-              <div class="post_picture">
-                <img
-                  class="profile_picture"
-                  src="../imgs/user_photo.png"
-                  alt="post_user_photo1"
-                />
-              </div>
-              <div class="post_info">
-                <div class="post_header">
-                  <span class="post_name_user user_name"></span>
-                  <span class="dot">·</span>
-                  <span class="post_date">17 de mar</span>
-                </div>
-                <div class="post_content">
-                  <span class="post_text">
-                    Contrary to popular belief, Lorem Ipsum is not simply random
-                    text. It has roots in a piece of classical Latin literature
-                    from 45 BC, making it over 2000 years old. Richard
-                    McClintock, a Latin professor at Hampden-Sydney College in
-                    Virginia, looked up one of the more obscure Latin
-                  </span>
-                </div>
-              </div>
-            </div>
-            <div class="post" id="post2">
-              <div class="post_picture">
-                <img
-                  class="profile_picture"
-                  src="../imgs/user_photo.png"
-                  alt="post_user_photo2"
-                />
-              </div>
-              <div class="post_info">
-                <div class="post_header">
-                  <span class="post_name_user user_name"></span>
-                  <span class="dot">·</span>
-                  <span class="post_date">17 de mar</span>
-                </div>
-                <div class="post_content">
-                  <span class="post_text">
-                    Contrary to popular belief, Lorem Ipsum is not simply random
-                    text. It has roots in a piece of classical Latin literature
-                    from 45 BC, making it over 2000 years old.
-                  </span>
-                  <img
-                    class="post2_picture"
-                    src="../imgs/sangue 2.png"
-                    alt="post_img"
-                  />
-                </div>
-              </div>
-            </div>
           </div>
         </div>
       </div>
     </main>
   </body>
-  <script src="../scripts/perfil_usuario_script.js"></script>
+  <script>
+    renderPosts();
+    insert_name(USER_NAME, ".user_name");
+    insert_img(USER_PHOTO_PATH, ".user_photo");
+  </script>
 </html>
