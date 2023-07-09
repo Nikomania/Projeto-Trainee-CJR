@@ -22,8 +22,8 @@ function renderHeader() {
   if (!logged) {
     // Definir o HTML dentro de rightDiv
     rightDiv.innerHTML = `
-            <a href="" class="criarConta semSublinhado">Criar Conta</a>
-            <a href="" class="entrar semSublinhado">Entrar</a>
+            <a href="../html/tela_cadastro.html" class="criarConta semSublinhado">Criar Conta</a>
+            <a href="../html/tela_login.html" class="entrar semSublinhado">Entrar</a>
       `;
   } else {
     rightDiv.classList.add("user_options");
