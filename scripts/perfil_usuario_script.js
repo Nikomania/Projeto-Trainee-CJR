@@ -21,9 +21,9 @@ function renderPosts() {
 
   postList.forEach((post) => {
     let post_div = document.createElement("div");
-    // post_div.addEventListener('click', () => {
-    //   window.location.href = ;
-    // })
+    post_div.addEventListener("click", () => {
+      window.location.href = "../html/tela_post.html";
+    });
 
     let post_picture_div = document.createElement("div");
     post_picture_div.classList.add("post_picture");

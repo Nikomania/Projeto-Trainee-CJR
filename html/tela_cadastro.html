@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="../scripts/initialData.js"></script>
+    <script src="../scripts/tela_cadastro_script.js"></script>
     <script src="../scripts/insertFunctions.js"></script>
     <script src="../scripts/renderHeader.js"></script>
     <link rel="stylesheet" href="../css/cadastro_style.css" />
@@ -16,25 +17,39 @@
     </script>
     <main>
       <img id="img_fundo" src="../imgs/cjr_logo.png" alt="CJR_logo" />
-      <div id="cadastro">
+      <form id="cadastro">
         <div id="inserir_foto">
           <img
             id="img_user_no_photo"
             src="../imgs/user_no_photo.png"
             alt="user_no_photo"
           />
-          <a href=""
-            ><img
+          <label for="fileInput">
+            <img
               id="img_ins_photo"
               src="../imgs/insert_photo.png"
               alt="insert_photo"
-          /></a>
+            />
+          </label>
+          <input
+            id="fileInput"
+            type="file"
+            accept="image/png, image/jpeg"
+            style="display: none"
+          />
         </div>
-        <form id="campos">
+        <div id="campos">
           <input class="campo" type="text" placeholder="Nome" />
           <div id="genero" class="campo">
             <span id="genero_placeholder">Gênero</span>
-            <img id="select" src="../imgs/select.png" alt="" />
+            <div id="drop-down">
+              <img id="select" src="../imgs/select.png" alt="" />
+              <ul id="dropdownMenu">
+                <li class="options">Feminino</li>
+                <li class="options">Masculino</li>
+                <li class="options">Outros</li>
+              </ul>
+            </div>
           </div>
           <input class="campo" type="text" placeholder="Cargo" />
           <input class="campo" type="email" placeholder="Email" />
@@ -43,11 +58,12 @@
           <span id="link">Possui conta? <a href="">Acesse aqui!</a></span>
 
           <button id="botao">Cadastrar</button>
-        </form>
-      </div>
+        </div>
+      </form>
     </main>
   </body>
   <script>
     insert_name(USER_NAME, ".user_name");
+    renderCampoGenero();
   </script>
 </html>
