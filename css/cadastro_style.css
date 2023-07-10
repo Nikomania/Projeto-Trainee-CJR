@@ -99,6 +99,7 @@ main {
   font-style: normal;
   font-weight: 700;
   line-height: 1.86vh;
+  font-size: 1.56vh;
 }
 
 #genero_placeholder:hover {
@@ -141,6 +142,7 @@ main {
   font-style: normal;
   font-weight: 700;
   line-height: 1.86vh;
+  font-size: 1.56vh;
 }
 
 #link {
