@@ -1,0 +1,38 @@
+@import "header_style.css";
+
+img {
+  -webkit-user-drag: none;
+}
+
+.posts {
+  border: none;
+}
+
+body {
+  font-family: Inter;
+  font-style: normal;
+  line-height: normal;
+  margin: 0;
+  width: 100vw;
+  background: var(--background-color);
+  overflow-x: hidden;
+}
+
+main {
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.feed {
+  width: 44.86vw;
+  margin-top: 0.22vh;
+}
+
+.profile_content {
+  display: flex;
+  flex-direction: column;
+  border-right: 0.07vw solid var(--border-color);
+  border-left: 0.07vw solid var(--border-color);
+}

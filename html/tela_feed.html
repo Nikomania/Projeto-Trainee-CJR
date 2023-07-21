@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/posts_style.css" />
+    <link rel="stylesheet" href="../css/tela_feed_style.css" />
+    <script src="../scripts/initialData.js"></script>
+    <script src="../scripts/insertFunctions.js"></script>
+    <script src="../scripts/renderHeader.js"></script>
+    <script src="../scripts/renderPosts.js"></script>
+    <title>Feed</title>
+    <script>
+      if (logged) insert_name("Feed Logado", "title");
+    </script>
+  </head>
+  <body>
+    <header></header>
+    <script>
+      renderHeader();
+    </script>
+    <main>
+      <div class="feed">
+        <div class="profile_content">
+          <div class="posts"></div>
+        </div>
+      </div>
+    </main>
+  </body>
+  <script>
+    renderPosts();
+    insert_name(USER_NAME, ".user_name");
+    insert_img(USER_PHOTO_PATH, ".user_photo");
+  </script>
+</html>
