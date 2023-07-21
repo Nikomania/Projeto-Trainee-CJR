@@ -1,4 +1,5 @@
 let logged = false;
+let comments = true;
 const USER_NAME = "Joazin gamer";
 const USER_PHOTO_PATH = "../imgs/user_photo.png";
 const MONTHS = [
