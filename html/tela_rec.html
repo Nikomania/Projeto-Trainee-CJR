@@ -1,38 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tela de recuperação de senha</title>
-    <link rel="stylesheet" href="../css/rec_style.css">
-</head>
-<body>
-    <header>
-        <div class="cjrLogoHeader">
-            <a href="" > <img class="cjrLogoHeaderImg" src="../imgs/cjr_logo.png" alt="logo cjr"> </a>
-        </div>
-        <div>
-            <a href="" class="criarConta">Criar Conta</a>
-            <a href="" class="entrar">Entrar</a>
-        </div>
-    </header>
+    <script src="../scripts/initialData.js"></script>
+    <script src="../scripts/insertFunctions.js"></script>
+    <script src="../scripts/renderHeader.js"></script>
+    <link rel="stylesheet" href="../css/rec_style.css" />
+  </head>
+  <body>
+    <header></header>
+    <script>
+      renderHeader();
+    </script>
     <main>
-        <img id="img_fundo" src="../imgs/cjr_logo.png" alt="logo cjr">
-        <div id="divRec"> 
-            <div id="divText">
-                <p class="texto1">Bem vindo de volta, fulano! escolha sua nova senha</p>
-            </div>  
-            <form id="divInfo">
-                <p class="texto">Senha nova</p>
-                <input class="senha" type="password" placeholder="Senha">
-                <p class="texto">Digite novamente a senha</p>
-                <input class="senha" type="password" placeholder="Senha">
-            </form>
-            
-            <span id="link">Possui conta? <a id="link2" href="">Acesse aqui!</a></span>
-            
-            <button id="botao">Cadastrar</button>
+      <img id="img_fundo" src="../imgs/cjr_logo.png" alt="logo cjr" />
+      <div id="divRec">
+        <div id="divText">
+          <p class="texto1">
+            Bem vindo de volta, fulano! escolha sua nova senha
+          </p>
         </div>
+        <form id="divInfo">
+          <p class="texto">Senha nova</p>
+          <input class="senha" type="password" placeholder="Senha" />
+          <p class="texto">Digite novamente a senha</p>
+          <input class="senha" type="password" placeholder="Senha" />
+        </form>
+
+        <span id="link"
+          >Possui conta?
+          <a id="link2" href="../html/tela_login.html">Acesse aqui!</a></span
+        >
+
+        <button id="botao">Cadastrar</button>
+      </div>
     </main>
-</body>
+  </body>
+  <script>
+    insert_name(USER_NAME, ".user_name");
+  </script>
 </html>

@@ -1,14 +1,6 @@
+@import "../css/style.css";
 @import "../css/header_style.css";
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
-
-:root {
-  --background-color: #111e3e;
-  --border-color: #7e7e7e;
-  --Post_background-color: #222e50;
-  --font-color: #ffffff;
-  --font-color-date: #71767b;
-  --button-color: #111e3e;
-}
 
 img {
   -webkit-user-drag: none;
@@ -48,12 +40,11 @@ body {
   margin: 0;
   width: 100vw;
   background: var(--background-color);
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 main {
   width: 100vw;
-  height: 100.23vh;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -67,11 +58,6 @@ main {
 .Post_background {
   height: 16.08vh;
   background: var(--Post_background-color);
-}
-
-.Line_1 {
-  height: 0.22vh;
-  background: var(--border-color);
 }
 
 .user_info {
@@ -90,7 +76,6 @@ main {
 }
 
 .profile_content {
-  height: 83.7vh;
   display: flex;
   flex-direction: column;
   border-right: 0.07vw solid var(--border-color);
@@ -115,7 +100,6 @@ main {
 }
 
 .main_user_name {
-  width: 9.86vw;
   height: 1.7vh;
   flex-shrink: 0;
   margin-top: 1.49vh;
@@ -134,8 +118,10 @@ main {
 }
 
 .posts {
+  border-top-style: ridge;
+  border-top-color: var(--border-color);
+  border-top-width: 0.22vh;
   display: flex;
-  height: 62.94vh;
   flex-direction: column;
   padding: 0 0.56vw 0 0.56vw;
 }
@@ -155,6 +141,11 @@ main {
   width: 43.75vw;
   background: var(--Post_background-color);
   border-radius: 3.81vh;
+  padding: 0 0 4.9vh 0;
+}
+
+.post:hover {
+  cursor: pointer;
 }
 
 .post_picture {
@@ -190,16 +181,7 @@ main {
   font-weight: 500;
 }
 
-#post1 {
-  height: 19.38vh;
-}
-
-#post2 {
-  height: 38.55vh;
-  border-radius: 3.81vh 3.81vh 0 0;
-}
-
-.post2_picture {
+.post_img {
   margin-top: 2.45vh;
   width: 31.6vw;
   height: 24.6vh;

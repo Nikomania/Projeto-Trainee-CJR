@@ -1,3 +1,4 @@
+@import "../css/style.css";
 @import "../css/header_style.css";
 
 img {
@@ -85,6 +86,7 @@ main {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  position: relative;
 }
 
 #genero_placeholder {
@@ -97,12 +99,39 @@ main {
   font-style: normal;
   font-weight: 700;
   line-height: 1.86vh;
+  font-size: 1.56vh;
+}
+
+#genero_placeholder:hover {
+  cursor: default;
 }
 
 #select {
-  margin-right: 1.39vw;
-  height: 1.76vh;
-  width: 1.25vw;
+  height: 2.56vh;
+}
+
+#select:hover {
+  cursor: pointer;
+}
+
+#drop-down {
+  position: absolute;
+  top: 1.66vh;
+  left: 24.17vw;
+}
+
+.options {
+  list-style: none;
+  border-width: 1px;
+  border-style: ridge;
+  background-color: #d9d9d9;
+  border-color: black;
+  padding: 0.2vh 0.3vw;
+  opacity: 0;
+}
+
+.options:hover {
+  cursor: default;
 }
 
 .campo::placeholder {
@@ -113,6 +142,7 @@ main {
   font-style: normal;
   font-weight: 700;
   line-height: 1.86vh;
+  font-size: 1.56vh;
 }
 
 #link {

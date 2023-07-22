@@ -12,6 +12,11 @@
       </span>
       <img src="">
     </div>
+    <div>
+      <a href="">
+          <img class="comentario" src="../imgs/icone-comentario" >
+        </a>
+    </div>
   </div>
 </div>; */
 }
@@ -81,6 +86,22 @@ function renderPosts() {
     });
 
     post_info_div.appendChild(post_content_div);
+
+    if (comments) {
+      let post_comt_div = document.createElement("div");
+
+      let comentario_link = document.createElement("a");
+      comentario_link.href = "../html/tela_post.html";
+
+      let icone_cmt = document.createElement("img");
+      icone_cmt.src = "../imgs/icone-comentario.png";
+      icone_cmt.classList.add("comentario");
+
+      comentario_link.appendChild(icone_cmt);
+      post_comt_div.appendChild(comentario_link);
+      post_info_div.appendChild(post_comt_div);
+    }
+
     post_div.appendChild(post_info_div);
     posts_div.appendChild(post_div);
   });
