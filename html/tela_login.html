@@ -7,11 +7,14 @@
     <script src="../scripts/initialData.js"></script>
     <script src="../scripts/insertFunctions.js"></script>
     <script src="../scripts/renderHeader.js"></script>
+    <script src="../scripts/loginButton.js"></script>
+    <script>localStorage.setItem("login", false)</script>
     <link rel="stylesheet" href="../css/login_style.css" />
   </head>
   <body>
     <header></header>
     <script>
+      console.log(localStorage.getItem("login"))
       renderHeader();
     </script>
     <main>
@@ -41,8 +44,7 @@
               />
             </svg>
           </div>
-
-          <input type="email" placeholder="Login" />
+          <input type="email" placeholder="Login" id="emailInput"/>
         </div>
         <div class="divSenhaCampo">
           <div class="divImgCampos">
@@ -58,12 +60,10 @@
               />
             </svg>
           </div>
-          <input type="password" placeholder="Senha" />
+          <input type="password" placeholder="Senha" id="senhaInput"/>
         </div>
-        <a href="../html/tela_rec.html" class="esqueceuSenha"
-          >Esqueceu a senha?</a
-        >
-        <button class="loginEntrar">Entrar</button>
+        <a href="../html/tela_rec.html" class="esqueceuSenha">Esqueceu a senha?</a>
+        <button class="loginEntrar" onclick="loginButton()">Entrar</button>
       </div>
     </main>
   </body>

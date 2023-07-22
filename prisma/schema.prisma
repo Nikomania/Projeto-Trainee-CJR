@@ -15,7 +15,7 @@ model User{
   username          String
   senha             String
   gender            String
-  email             String
+  email             String  @unique
   cargo             String
   created_at        DateTime
   comentarios       Comment[]
@@ -29,7 +29,7 @@ model Comment{
   post_id           Int
   user_id           Int
   content_comments  String
-
+  created_at        DateTime
 }
 
 model Post{
