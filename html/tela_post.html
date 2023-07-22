@@ -6,6 +6,7 @@
     <title>Post</title>
     <script src="../scripts/renderHeader.js"></script>
     <script src="../scripts/initialData.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/simplemde/latest/simplemde.min.css">
     <link rel="stylesheet" href="../css/post_aberto.css" />
   </head>
   <body>
@@ -15,7 +16,18 @@
     </script>
     <main>
       <section class="sectionFeed"></section>
+      <div id="modaloverlay">
+        <div id="divPost">
+              <textarea name="" id="" cols="30" rows="10"></textarea>
+            <span id="botoes">
+                <button id ="cancel">Cancelar</button>
+                <button id="publ">Publicar</button>
+            </span>              
+        </div>
+      </div>
+      <script src="https://cdn.jsdelivr.net/simplemde/latest/simplemde.min.js"></script>
       <script src="../scripts/renderPost.js"></script>
+      <script src="../scripts/mostrarpost.js"></script>
     </main>
   </body>
 </html>
