@@ -7,6 +7,7 @@
     <script src="../scripts/tela_cadastro_script.js"></script>
     <script src="../scripts/insertFunctions.js"></script>
     <script src="../scripts/renderHeader.js"></script>
+    <script src="../scripts/signupButton.js"></script>
     <link rel="stylesheet" href="../css/cadastro_style.css" />
     <title>Tela de cadastro</title>
   </head>
@@ -39,7 +40,7 @@
           />
         </div>
         <div id="campos">
-          <input class="campo" type="text" placeholder="Nome" />
+          <input id="nome" class="campo" type="text" placeholder="Nome" />
           <div id="genero" class="campo">
             <span id="genero_placeholder">Gênero</span>
             <div id="drop-down">
@@ -51,16 +52,16 @@
               </ul>
             </div>
           </div>
-          <input class="campo" type="text" placeholder="Cargo" />
-          <input class="campo" type="email" placeholder="Email" />
-          <input class="campo" type="password" placeholder="Senha" />
+          <input id="cargo" class="campo" type="text" placeholder="Cargo" />
+          <input id="email" class="campo" type="email" placeholder="Email" />
+          <input id="senha" class="campo" type="password" placeholder="Senha" />
 
           <span id="link"
             >Possui conta?
             <a href="../html/tela_rec.html">Acesse aqui!</a></span
           >
 
-          <button id="botao">Cadastrar</button>
+          <button id="botao" onclick="signupButton()">Cadastrar</button>
         </div>
       </form>
     </main>

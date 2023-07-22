@@ -36,3 +36,19 @@ main {
   border-right: 0.07vw solid var(--border-color);
   border-left: 0.07vw solid var(--border-color);
 }
+
+.botao {
+  color: #fff;
+  font-family: Inter;
+  font-size: 1.6vh;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  border-radius: 1.7vh;
+  background: #8bc34a;
+  margin-top: 1.6vh;
+  width: 10.14vw;
+  height: 4.58vh;
+  margin-left: 0.56vw;
+  border-style: none;
+}

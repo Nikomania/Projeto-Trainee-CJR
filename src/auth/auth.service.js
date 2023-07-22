@@ -1,31 +1,47 @@
-import jwt from "jsonwebtoken"
-import UserService from "../user/user.service.js"
+import jwt from "jsonwebtoken";
+import bcrypt from "bcrypt";
+import UserService from "../user/user.service.js";
 
-const userService = new UserService()
+import dotenv from "dotenv";
 
-class AuthService{
-    async signIn(email, password){
-        const user = await userService.findByEmail(email);
+dotenv.config();
+const userService = new UserService();
 
-        if(!user){
-            throw new Error("Usuário não cadastrado");
-        }
+class AuthService {
+  async signIn(email, password) {
+    const user = await userService.findByEmail(email);
 
-        if(user.senha !== password){
-            throw new Error("Senha incorreta");
-        }
-
-        const token = jwt.sign({id: user.id, username: user.username, password: user.password, gender: user.gender, email: user.email, created_at: user.created_at}, "secret", {expiresIn: "60m"});
-        return token;
+    if (!user) {
+      throw new Error("Usuário não cadastrado");
     }
 
-    async signUp(name, gender, cargo, email, senha) {
-        const salt = await bcrypt.genSalt();
-        senha = await bcrypt.hash(senha, salt);
-    
-        const newUser = await userService.create(name, gender, cargo, email, senha);
-        return newUser;
+    if (!(await bcrypt.compare(password, user.senha))) {
+      throw new Error("Senha incorreta");
     }
+
+    const token = jwt.sign(
+      {
+        id: user.id,
+        username: user.username,
+        password: user.password,
+        gender: user.gender,
+        email: user.email,
+        created_at: user.created_at,
+      },
+      process.env.JWT_SECRET,
+      { expiresIn: "60m" }
+    );
+
+    return token;
+  }
+
+  async signUp(name, gender, cargo, email, senha) {
+    const salt = await bcrypt.genSalt();
+    senha = await bcrypt.hash(senha, salt);
+
+    const newUser = await userService.create(name, gender, cargo, email, senha);
+    return newUser;
+  }
 }
 
 export default AuthService;

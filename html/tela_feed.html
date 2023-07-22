@@ -6,12 +6,14 @@
     <link rel="stylesheet" href="../css/posts_style.css" />
     <link rel="stylesheet" href="../css/tela_feed_style.css" />
     <script src="../scripts/initialData.js"></script>
+    <script src="../scripts/tela_feed_script.js"></script>
     <script src="../scripts/insertFunctions.js"></script>
     <script src="../scripts/renderHeader.js"></script>
     <script src="../scripts/renderPosts.js"></script>
     <title>Feed</title>
     <script>
-      if (logged) insert_name("Feed Logado", "title");
+      if (localStorage.getItem("login") == "true")
+        insert_name("Feed Logado", "title");
     </script>
   </head>
   <body>
@@ -22,12 +24,15 @@
     <main>
       <div class="feed">
         <div class="profile_content">
+          <button class="botao" onclick="">Criar Publicação</button>
           <div class="posts"></div>
         </div>
       </div>
     </main>
   </body>
   <script>
+    let comments = true;
+    renderBotao();
     renderPosts();
     insert_name(USER_NAME, ".user_name");
     insert_img(USER_PHOTO_PATH, ".user_photo");

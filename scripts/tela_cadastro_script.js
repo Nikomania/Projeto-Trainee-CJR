@@ -1,5 +1,4 @@
 let clicked = false;
-let genero = undefined;
 
 function renderCampoGenero() {
   let options = document.querySelectorAll(".options");
@@ -16,7 +15,8 @@ function renderCampoGenero() {
   options.forEach((option) => {
     option.addEventListener("click", (event) => {
       if (clicked) {
-        place_holder.textContent = genero = event.target.textContent;
+        place_holder.textContent = event.target.textContent;
+        localStorage.setItem("genero", event.target.textContent);
       }
     });
   });
