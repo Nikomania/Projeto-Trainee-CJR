@@ -1,69 +1,66 @@
 @import "../css/header_style.css";
 @import "../css/feed_style.css";
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
 
-
-*{padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
-a{
-    text-decoration: none;
+a {
+  text-decoration: none;
 }
 
-body{
-    font-family: 'Inter', sans-serif;
+body {
+  font-family: "Inter", sans-serif;
 }
 
-main{
-    box-sizing: border-box;
+main {
+  box-sizing: border-box;
 
-    width: 100vw;
-    height: 92vh;
-    background-color: #111E3E;
-    border: 1px solid #000000;
-
+  width: 100vw;
+  height: 92vh;
+  background-color: #111e3e;
+  border: 1px solid #000000;
 }
 
-.postAberto{
-    background-color: #222E50;
-    border-top-left-radius: 32px;
-    border-top-right-radius: 32px;
-    margin: 7px 8px;
-    padding-top: 13px;
-    min-height: 100%;
-    position: relative;
+.postAberto {
+  background-color: #222e50;
+  border-top-left-radius: 32px;
+  border-top-right-radius: 32px;
+  margin: 7px 8px;
+  padding-top: 13px;
+  min-height: 100%;
+  position: relative;
 }
 
-.seta{  
-    background-color: #222E50;
-    margin-left: 21px;
+.seta {
+  background-color: #222e50;
+  margin-left: 21px;
 }
 
-.balaoComentario{
-    margin-left: 70px;
+.balaoComentario {
+  margin-left: 70px;
 }
 
-.divComentar{
-    background-color: #19192D;
-    border-top: 1px solid #44445C;
-    height: 104px;
-    display: flex;
-    align-items: center;  
-    justify-content: center;
-    position: absolute;
-    width: 100%;
-    bottom: 0;
+.divComentar {
+  background-color: #19192d;
+  border-top: 1px solid #44445c;
+  height: 104px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
 }
 
-
-.buttonComentar{
-    background-color: #fff;
-    color: #000000;
-    border-radius: 16px;
-    font-weight: bold;
-    padding: 14px 43px;
+.buttonComentar {
+  background-color: #fff;
+  color: #000000;
+  border-radius: 16px;
+  font-weight: bold;
+  padding: 14px 43px;
 }
-

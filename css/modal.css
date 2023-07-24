@@ -1,0 +1,95 @@
+#divPost {
+  border-radius: 32px;
+  width: 60vw;
+  height: 69vh;
+  background-color: #111e3e;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 45px 0px 0px 0px;
+}
+
+#caixadetexto {
+  border-radius: 16px;
+  width: 53.62vw;
+  height: 43.73vh;
+  background-color: #222e50;
+}
+
+#botoes {
+  margin-top: 2vh;
+  margin-left: 30.2vw;
+}
+
+#publ {
+  border-radius: 16px;
+  height: 6.84vh;
+  width: 12.7vw;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.94vw;
+  line-height: 3.31vh;
+  background-color: #8bc34a;
+  color: #ffffff;
+}
+
+#cancel {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.94vw;
+  line-height: 3.31vh;
+  color: #ffffff;
+  padding-right: 2vw;
+  background-color: transparent;
+  border: none;
+}
+
+.linha {
+  border-bottom: 1px solid rgb(255, 255, 255);
+  opacity: 0.5;
+  width: 53.62vw;
+  margin-top: 2vh;
+}
+
+#modaloverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: none;
+  visibility: hidden;
+}
+
+#modaloverlay.visible {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  visibility: visible;
+}
+
+.editor-toolbar {
+  border-radius: 16px 16px 0 0;
+  width: 53.62vw;
+  background-color: #222e50;
+}
+
+.editor-toolbar a {
+  color: white !important;
+  opacity: 1;
+}
+
+.CodeMirror {
+  border-radius: 0 0 16px 16px;
+  width: 53.62vw;
+  height: 43.73vh;
+  background-color: #222e50;
+}
+
+.editor-statusbar {
+  display: none;
+  visibility: hidden;
+}

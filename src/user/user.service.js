@@ -47,6 +47,26 @@ class UserService {
       },
     });
   }
+
+  verify_data(username, gender, cargo, email, password) {
+    const user = [username, gender, cargo, email, password];
+    user.forEach((element) => {
+      if (element.length < 4) {
+        throw new Error("Dados inválidos");
+      }
+    });
+
+    if (!email.includes("@")) {
+      throw new Error("Email inválido");
+    }
+
+    if (
+      gender == "undefined" ||
+      (gender != "Masculino" && gender != "Feminino" && gender != "Outros")
+    ) {
+      throw new Error("Gênero inválido");
+    }
+  }
 }
 
 export default UserService;

@@ -38,8 +38,13 @@ class AuthService {
   async signUp(name, gender, cargo, email, senha) {
     const salt = await bcrypt.genSalt();
     senha = await bcrypt.hash(senha, salt);
+    let newUser = undefined;
 
-    const newUser = await userService.create(name, gender, cargo, email, senha);
+    try {
+      newUser = await userService.create(name, gender, cargo, email, senha);
+    } catch (e) {
+      throw e;
+    }
     return newUser;
   }
 }

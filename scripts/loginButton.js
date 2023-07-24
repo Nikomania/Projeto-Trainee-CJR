@@ -19,7 +19,7 @@ async function loginButton() {
       if (data.message == "Login efetuado com sucesso!") {
         localStorage.setItem("token", data.key);
         localStorage.setItem("login", true);
-        window.location.href = "../html/perfil_usuario.html";
+        window.location.href = "../html/tela_feed.html";
       }
 
       alert(data.message);

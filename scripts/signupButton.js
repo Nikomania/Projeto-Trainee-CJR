@@ -5,10 +5,6 @@ async function signupButton() {
   const emailI = document.getElementById("email").value;
   const passwordI = document.getElementById("senha").value;
 
-  if (!genero) {
-    console.log("Gênero não selecionado");
-    return;
-  }
   fetch("http://127.0.0.1:3000/sign-up", {
     method: "POST",
     headers: {
@@ -26,8 +22,10 @@ async function signupButton() {
       return res.json();
     })
     .then((data) => {
+      if (data.message == "Cadastro realizado com sucesso!") {
+        window.location.href = "../html/tela_login.html";
+      }
       alert(data.message);
-      window.location.href = "../html/tela_login.html";
     })
     .catch((erro) => alert(erro));
 }

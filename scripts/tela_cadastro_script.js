@@ -1,4 +1,5 @@
 let clicked = false;
+localStorage.setItem("genero", "undefined");
 
 function renderCampoGenero() {
   let options = document.querySelectorAll(".options");
