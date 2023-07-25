@@ -48,6 +48,14 @@ class UserService {
     });
   }
 
+  async findById(id) {
+    return await prisma.user.findUnique({
+      where: {
+        id,
+      },
+    });
+  }
+
   verify_data(username, gender, cargo, email, password) {
     const user = [username, gender, cargo, email, password];
     user.forEach((element) => {

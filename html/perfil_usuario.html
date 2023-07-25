@@ -4,17 +4,17 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../css/perfil_usuario_style.css" />
+    <link rel="stylesheet" href="../css/posts_style.css" />
     <script src="../scripts/initialData.js"></script>
     <script src="../scripts/insertFunctions.js"></script>
     <script src="../scripts/renderHeader.js"></script>
     <script src="../scripts/renderEditButton.js"></script>
-    <script src="../scripts/perfil_usuario_script.js"></script>
+    <script src="../scripts/renderPosts.js"></script>
     <title>Perfil do Usuário</title>
   </head>
   <body>
     <header></header>
     <script>
-      console.log(localStorage.getItem("login"));
       renderHeader();
     </script>
     <main>
@@ -25,14 +25,14 @@
             <div class="user_info">
               <div class="user_info_content">
                 <div class="user_main_photo user_photo"></div>
-                <span class="user_name main_user_name"></span>
+                <span class="user_perfil_name main_user_name"></span>
                 <div class="info">
                   <img
                     class="icon"
                     src="../imgs/mdi_office-building.png"
                     alt="office_building"
                   />
-                  <span class="text_icon">Assessoria</span>
+                  <span class="text_icon user_perfil_cargo"></span>
                 </div>
                 <div class="info">
                   <img
@@ -40,7 +40,7 @@
                     src="../imgs/eva_email-outline.png"
                     alt="email"
                   />
-                  <span class="text_icon">Joazin.gamer.23@cjr.org.br</span>
+                  <span class="text_icon user_perfil_email"></span>
                 </div>
               </div>
             </div>
@@ -56,9 +56,5 @@
       </div>
     </main>
   </body>
-  <script>
-    renderPosts();
-    insert_name(USER_NAME, ".user_name");
-    insert_img(USER_PHOTO_PATH, ".user_photo");
-  </script>
+  <script src="../scripts/perfil_usuario_script.js"></script>
 </html>

@@ -22,17 +22,16 @@ class AuthService {
     const token = jwt.sign(
       {
         id: user.id,
+        cargo: user.cargo,
         username: user.username,
-        password: user.password,
         gender: user.gender,
         email: user.email,
-        created_at: user.created_at,
       },
       process.env.JWT_SECRET,
       { expiresIn: "60m" }
     );
 
-    return token;
+    return { user, token };
   }
 
   async signUp(name, gender, cargo, email, senha) {

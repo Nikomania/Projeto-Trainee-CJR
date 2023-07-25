@@ -10,7 +10,6 @@
     <link rel="stylesheet" href="../css/posts_style.css" />
     <link rel="stylesheet" href="../css/tela_feed_style.css" />
     <script src="../scripts/initialData.js"></script>
-    <script src="../scripts/tela_feed_script.js"></script>
     <script src="../scripts/insertFunctions.js"></script>
     <script src="../scripts/renderHeader.js"></script>
     <script src="../scripts/renderPosts.js"></script>
@@ -45,11 +44,5 @@
     <script src="https://cdn.jsdelivr.net/simplemde/latest/simplemde.min.js"></script>
     <script src="../scripts/mostrarpost2.js"></script>
   </body>
-  <script>
-    let comments = true;
-    renderBotao();
-    renderPosts();
-    insert_name(USER_NAME, ".user_name");
-    insert_img(USER_PHOTO_PATH, ".user_photo");
-  </script>
+  <script src="../scripts/tela_feed_script.js"></script>
 </html>

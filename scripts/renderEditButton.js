@@ -1,7 +1,9 @@
 function renderEditButton() {
   const logged2 = localStorage.getItem("login");
-  console.log(`edit button ${logged2}`)
-  if (logged2) {
+  if (
+    logged2 == "true" &&
+    localStorage.getItem("id_perfil") == localStorage.getItem("main_user_id")
+  ) {
     let div = document.querySelector("div.div_edit_button");
     while (div.firstChild) {
       div.removeChild(div.firstChild);

@@ -12,10 +12,14 @@ authRouter.post("/sign-in", jsonParser, async (req, res) => {
   const { email, password } = req.body;
 
   try {
-    const token = await authService.signIn(email, password);
+    const { user, token } = await authService.signIn(email, password);
     res
       .status(200)
-      .json({ message: "Login efetuado com sucesso!", key: token });
+      .json({
+        message: "Login efetuado com sucesso!",
+        key: token,
+        id: user.id,
+      });
   } catch (e) {
     res.status(400).json({ message: e.message });
   }

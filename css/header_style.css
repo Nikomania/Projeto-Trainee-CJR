@@ -40,6 +40,10 @@ header {
   margin-left: 1.11vw;
 }
 
+.logged_picture:hover {
+  cursor: pointer;
+}
+
 .semSublinhado {
   text-decoration: none;
 }

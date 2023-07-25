@@ -17,14 +17,14 @@
   padding: 0 0 4.9vh 0;
 }
 
-.post:hover {
-  cursor: pointer;
-}
-
 .post_picture {
   margin-left: 1.67vw;
   height: 5.11vh;
   margin-top: 1.49vh;
+}
+
+.post_picture:hover {
+  cursor: pointer;
 }
 
 .post_info {
@@ -69,4 +69,8 @@
 .comentario {
   height: 1.92vh;
   margin-top: 1.28vh;
+}
+
+.comentario:hover {
+  cursor: pointer;
 }
