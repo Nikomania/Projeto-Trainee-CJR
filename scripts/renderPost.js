@@ -194,4 +194,9 @@ async function renderPost() {
       window.location.href = "../html/perfil_usuario.html";
     });
   });
+
+  if (localStorage.getItem("login") == "false") {
+    const balao = document.querySelector(".buttonComentar");
+    balao.style.display = "none";
+  }
 }

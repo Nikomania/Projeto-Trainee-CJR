@@ -35,7 +35,6 @@ function renderComments(divPostAberto) {
   for (let i = 0; i < comentarios.length; i++) {
     const divComment = document.createElement("div");
     divComment.classList.add("divPost");
-    console.log(comentarios[i].photo);
     divComment.innerHTML = `
             <div class="postHeader">
                 <img src="${comentarios[i].photo}" class="imgPerfil">

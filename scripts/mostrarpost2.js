@@ -9,4 +9,5 @@ btmcancelar.addEventListener("click", () => {
 });
 var simplemde = new SimpleMDE({
   toolbar: ["bold", "italic", "heading", "link", "image", "guide"],
+  element: document.getElementById("myTextarea"),
 });

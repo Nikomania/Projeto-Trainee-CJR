@@ -5,13 +5,14 @@ const prisma = new PrismaClient();
 class PostService {
   async create(user_id, content) {
     const created_at = new Date().toISOString();
+    const update_at = created_at;
     try {
       return await prisma.Post.create({
         data: {
           user_id,
           content,
           created_at,
-          created_at,
+          update_at,
           comentarios: {},
         },
       });

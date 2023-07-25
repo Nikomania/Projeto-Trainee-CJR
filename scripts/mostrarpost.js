@@ -9,9 +9,11 @@ async function mostrarpost() {
   btmcancelar.addEventListener("click", () => {
     modal.classList.toggle("visible");
   });
-  var simplemde = new SimpleMDE({
-    toolbar: ["bold", "italic", "heading", "link", "image", "guide"],
-  });
 }
+
+var simplemde = new SimpleMDE({
+  toolbar: ["bold", "italic", "heading", "link", "image", "guide"],
+  element: document.getElementById("myTextarea"),
+});
 
 mostrarpost();

@@ -1,111 +1,109 @@
 @import "../css/header_style.css";
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
 
-
-*{padding: 0;
-margin: 0;
-box-sizing: border-box;
-} 
-
-a{
-    text-decoration: none;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
-body{
-    font-family: 'Inter', sans-serif;
+a {
+  text-decoration: none;
 }
 
-main{
-    box-sizing: border-box;
-
-    width: 100vw;
-    height: 92vh;
-
-    background-color: #111E3E;
-    border: 1px solid #000000;
-    padding: 14vh 31vw 19vh 31vw;
+body {
+  font-family: "Inter", sans-serif;
 }
 
-.divLogin{
-    width: 38vw;
-    height: 59vh;
-    background-color: #222E50;
-    
-    border-radius: 10px;
+main {
+  box-sizing: border-box;
 
-    display: flex;
-    flex-direction: column;
-    /* coloca os objetos verticalmente no centro */
-    align-items: center;
-    /* coloca os objetos horizontalmente no centro */
-    justify-content: center;    
+  width: 100vw;
+  height: 92vh;
+
+  background-color: #111e3e;
+  border: 1px solid #000000;
+  padding: 14vh 31vw 19vh 31vw;
 }
 
+.divLogin {
+  width: 38vw;
+  height: 59vh;
+  background-color: #222e50;
 
-.imgLogin{
-    width: 12vw;
-    height: 15vh;
+  border-radius: 10px;
 
-    margin-top: 5.67vh;
-    margin-bottom: 5.09vh;
+  display: flex;
+  flex-direction: column;
+  /* coloca os objetos verticalmente no centro */
+  align-items: center;
+  /* coloca os objetos horizontalmente no centro */
+  justify-content: center;
 }
 
-.divLoginCampo{
-    width: 29vw;
-    height: 5.8vh;
-    background-color:#71767b;
-    border-radius: 10px;
-    padding: 0px 0px 0px 1vw;
-    margin-bottom: 3.9vh;
-    display: flex;
-    justify-content: space-between;
-    /* coloca os objetos verticalmente no centro */
-    align-items: center;    
+.imgLogin {
+  width: 12vw;
+  height: 15vh;
+
+  margin-top: 5.67vh;
+  margin-bottom: 5.09vh;
 }
 
-.divSenhaCampo{
-    width: 29vw;
-    height: 5.8vh;
-    background-color:#71767b;
-    border-radius: 10px;
-    padding: 0px 0px 0px 1vw;
-    margin-bottom: 2.92vh;
-    display: flex;
-    justify-content: space-between;
-    /* coloca os objetos verticalmente no centro */
-    align-items: center;    
-}
-.esqueceuSenha{
-    color: #111E3E;
-    margin-bottom: 2.92vh;
-    font-weight: bold;
-         
+.divLoginCampo {
+  width: 29vw;
+  height: 5.8vh;
+  background-color: #71767b;
+  border-radius: 10px;
+  padding: 0px 0px 0px 1vw;
+  margin-bottom: 3.9vh;
+  display: flex;
+  justify-content: space-between;
+  /* coloca os objetos verticalmente no centro */
+  align-items: center;
 }
 
-input{
-    background-color: #d9d9d9;
-    width: 25.7vw;
-    height: 5.8vh;
-    border-radius: 15px;
-    padding: 1.95vh 19.3vw 1.95vh 1.73vw;
-    border-style: none;
+.divSenhaCampo {
+  width: 29vw;
+  height: 5.8vh;
+  background-color: #71767b;
+  border-radius: 10px;
+  padding: 0px 0px 0px 1vw;
+  margin-bottom: 2.92vh;
+  display: flex;
+  justify-content: space-between;
+  /* coloca os objetos verticalmente no centro */
+  align-items: center;
+}
+.esqueceuSenha {
+  color: #111e3e;
+  margin-bottom: 2.92vh;
+  font-weight: bold;
 }
 
-.imgCampo{
-    width: 1.18vw;
-    height: 1.66vh; 
+input {
+  background-color: #d9d9d9;
+  width: 25.7vw;
+  height: 5.8vh;
+  border-radius: 15px;
+  padding: 1.95vh 1vw 1.95vh 1.73vw;
+  border-style: none;
+}
+
+.imgCampo {
+  width: 1.18vw;
+  height: 1.66vh;
 }
 
 /* Não ta certo */
 
-.loginEntrar{
-    width: 19.6vw;
-    height: 4.87vh;
-    border-radius: 15px;
-    font-weight: bold;
-    background-color: #d9d9d9;
-    color: #222E50;
-    margin-bottom: 4.97vh;
-    border-style: none;
+.loginEntrar {
+  width: 19.6vw;
+  height: 4.87vh;
+  border-radius: 15px;
+  font-weight: bold;
+  background-color: #d9d9d9;
+  color: #222e50;
+  margin-bottom: 4.97vh;
+  border-style: none;
 }

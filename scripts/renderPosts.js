@@ -111,7 +111,7 @@ async function renderPosts(perfil_usuario) {
 
     post_info_div.appendChild(post_content_div);
 
-    if (localStorage.getItem("login") == "true" && !perfil_usuario) {
+    if (!perfil_usuario) {
       let post_comt_div = document.createElement("div");
 
       let comentario_link = document.createElement("a");
