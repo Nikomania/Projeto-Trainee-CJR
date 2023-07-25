@@ -24,6 +24,14 @@ class PostService {
     return await prisma.Post.findMany();
   }
 
+  async findById(id) {
+    return await prisma.Post.findUnique({
+      where: {
+        id,
+      },
+    });
+  }
+
   async findAllByUser(user_id) {
     return await prisma.post.findMany({
       where: {

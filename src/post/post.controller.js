@@ -16,7 +16,16 @@ postRouter.post("/get-posts-user", jsonParser, async (req, res) => {
   const { id } = req.body;
   try {
     const posts = await postService.findAllByUser(id);
-    console.log(posts);
+    res.status(200).json({ posts, message: "Requisição feita com sucesso!" });
+  } catch (e) {
+    res.status(400).json({ message: e.message });
+  }
+});
+
+postRouter.post("/get-post-id", jsonParser, async (req, res) => {
+  const { id } = req.body;
+  try {
+    const posts = await postService.findById(id);
     res.status(200).json({ posts, message: "Requisição feita com sucesso!" });
   } catch (e) {
     res.status(400).json({ message: e.message });

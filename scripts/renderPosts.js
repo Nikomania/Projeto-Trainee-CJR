@@ -111,7 +111,7 @@ async function renderPosts(perfil_usuario) {
 
     post_info_div.appendChild(post_content_div);
 
-    if (localStorage.getItem("login") == "true") {
+    if (localStorage.getItem("login") == "true" && !perfil_usuario) {
       let post_comt_div = document.createElement("div");
 
       let comentario_link = document.createElement("a");
@@ -121,6 +121,7 @@ async function renderPosts(perfil_usuario) {
       icone_cmt.id = post.id.toString();
       icone_cmt.addEventListener("click", (event) => {
         const id_post = event.target.id;
+        localStorage.setItem("id_post", id_post);
         window.location.href = "../html/tela_post.html";
       });
       icone_cmt.src = "../imgs/icone-comentario.png";
